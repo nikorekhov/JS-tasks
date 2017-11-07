@@ -1,7 +1,8 @@
 var link = prompt('Введите адрес к файлу', '/github.html');
 document.write("Ваше адрес: " + link);
 
- 
+document.write("</br>");
+
 function reverse(s) {
     return s.split('').reverse().join('');
 }
@@ -19,3 +20,4 @@ else{
 }
 
 document.write(" Результат: " + answer);
+document.write("</br>");
