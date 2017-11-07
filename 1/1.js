@@ -11,4 +11,5 @@ for(var i = 0; i < word.length; i++){
         }
     }
 }
-document.write("Ответ: " + resultWord);
+document.write("Ваше слово: " + word);
+document.writeln("Ответ: " + resultWord);
