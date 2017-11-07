@@ -12,4 +12,4 @@ for(var i = 0; i < word.length; i++){
     }
 }
 document.write("Ваше слово: " + word);
-document.writeln("Ответ: " + resultWord);
+document.write(" Ответ: " + resultWord);
