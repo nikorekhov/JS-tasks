@@ -22,6 +22,8 @@ function teacherSort(teachers){
 }
 
 var result = teacherSort(teachers);
+//Вывод массива
 for(var i = 0; i < result.length; i++){
     document.write(" " + result[i].name);
 }
+document.write("</br>");
