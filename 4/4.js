@@ -1,6 +1,6 @@
 //Проверка на четность
 var isEven = function(someNumber) {
-    return (someNumber % 2 == 0) ? true : false;
+    return (someNumber % 2 === 0) ? true : false;
 }
 
 //Удалить элемент
@@ -26,7 +26,7 @@ var numArray = [];
 
 //Заполняем массив
 for( var i = 0; i < 8; i++){
-    numArray[i] = parseInt(prompt('Введите число', '3'));
+    numArray[i] = prompt('Введите число', '3');
 }
 
 document.write("Ваш массив:");
@@ -38,9 +38,10 @@ for(var i = 0; i < numArray.length; i++){
 document.write("</br>");
 
 //Сортировка четных элементов массива
-for(var i = 0; i < numArray.length; i++){
-    if(!isEven(numArray[i])){
-        numArray.remove(numArray[i]);
+for(var i = 0; i < numArray.length;i++){
+    if(isEven(numArray[i]) === false){
+        numArray.splice(i,1);
+        i--;
     }
 }
 document.write("Массив четных чисел:");
