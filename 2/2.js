@@ -7,9 +7,15 @@ var math = new Teacher('Nick', 3000);
 var phys = new Teacher('Mike', 2000);
 var progr = new Teacher('Antony', 1000);
 
+document.write("Первоначальный массив: </br>");
 var teachers = [ math, phys, progr];
+for(var i = 0; i < teachers.length; i++){
+    document.write(teachers[i].name);
+    document.write(" " + teachers[i].salary + "</br>");
+}
+
 var result = teacherSort(teachers);
-document.write("Итоговый массив: ");
+document.write("Итоговый массив(ЗП<1000): ");
 
 function teacherSort(teachers){
     var resultArray = [];
