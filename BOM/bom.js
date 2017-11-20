@@ -4,7 +4,7 @@ function addBlock(number){
     } 
 }
 function changeColor(color){
-    $('li').css('bakcground-color', color);
+    $('li').css('background-color', color);
 }
 var color = $('#color').attr('value');
 var number = $('#number').attr('value');
