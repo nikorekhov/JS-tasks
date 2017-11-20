@@ -1,0 +1,12 @@
+.block{
+    display: flex;
+}
+
+li{
+    color: #000;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    list-style-type: none;
+    justify-content: center;
+};
