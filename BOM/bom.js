@@ -1,11 +1,20 @@
 function addBlock(number){
+    $('li').detach();
     for(var i = 0; i < number; i++){
         $('.block').append('<li>'+ (i+1) + '</li>');
     } 
 }
 function changeColor(color){
-    $('li').css('background-color', color);
+    if (flag){
+        $('li').filter(':even').css('background-color', color);
+        flag = false; 
+    }
+    else{
+        $('li').filter(':odd').css('background-color', color);
+        flag = true;
+    }
 }
+var flag = true;
 var color = $('#color').attr('value');
 var number = $('#number').attr('value');
 $(document).ready(function(){    
